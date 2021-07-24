@@ -1,7 +1,7 @@
 {
-    "name": "gatsby-site",
+    "name": "aspidaweb",
     "version": "1.0.0",
-    "description": "site",
+    "description": "Aspida RP server website",
     "main": "index.tsx",
     "engines": {
         "node": "^14.0.0"
