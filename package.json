@@ -4,7 +4,7 @@
     "description": "Aspida RP server website",
     "main": "index.tsx",
     "engines": {
-        "node": "^14.0.0"
+        "node": ">=14.0.0"
     },
     "scripts": {
         "lint": "eslint src --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
