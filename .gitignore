@@ -1,6 +1,8 @@
 # Specific to this repo
 .cache
 public
+data/
+src/__generated__
 
 # Logs
 logs

@@ -16,6 +16,13 @@ module.exports = {
             sassOptions: {
                 includePaths: ["src/css"]
             }
-        })
+        }),
+        resolvePlugin("gatsby-transformer-json"),
+        resolvePlugin("gatsby-source-filesystem", {
+            name: "data",
+            path: `${__dirname}/data/`,
+            typeName: `Json`
+        }),
+        resolvePlugin("gatsby-plugin-typegen")
     ]
 };
