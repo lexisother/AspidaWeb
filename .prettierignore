@@ -3,6 +3,7 @@
 .prettierignore
 .eslintignore
 .husky/
+.scripts/
 LICENSE
 
 # Specific to this repository
