@@ -30,3 +30,36 @@ body {
         font-size: 25px;
     }
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+
+    .card {
+        background-color: grey;
+        border: 1px solid black;
+        margin-bottom: 20px;
+
+        .cardHeader {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            img {
+                border-radius: 50%;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: -5px;
+            }
+            .nick {
+                font-size: 30px;
+            }
+            .name {
+                font-size: 20px;
+            }
+        }
+    }
+}
