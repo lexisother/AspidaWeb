@@ -81,22 +81,6 @@ export default function MembersPage({data}: MembersPageProps): JSX.Element {
                     </div>
                 ))}
             </div>
-            <div>
-                {members.map((member) => (
-                    <div>
-                        {member.name} roles:
-                        <br />
-                        {member.roles.map((role) => (
-                            <>
-                                <p style={{color: `#${roles.find((r) => r.id === role)?.color.toString(16)}`}}>
-                                    {roles.find((r) => r.id === role)?.name}
-                                </p>
-                            </>
-                        ))}
-                        <br />
-                    </div>
-                ))}
-            </div>
         </Page>
     );
 }
