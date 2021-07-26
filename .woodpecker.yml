@@ -11,3 +11,10 @@ pipeline:
             - npm run lint
             - npm run build
         secrets: [bot_token]
+
+    deploy:
+        image: node:latest
+        secrets: [now_token]
+        commands:
+            - npm i -g vercel
+            - vercel --token "$NOW_TOKEN" --prod --confirm
