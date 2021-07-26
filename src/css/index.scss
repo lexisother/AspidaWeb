@@ -57,6 +57,7 @@ a {
     .card {
         border: 1px solid black;
         margin-bottom: 20px;
+        background-color: #303030;
 
         .cardHeader {
             font-size: 30px;
@@ -82,8 +83,6 @@ a {
             }
         }
         .cardContent {
-            height: 6rem;
-            background-color: #303030;
             text-align: center;
             padding-top: 5px;
             padding-bottom: 10px;
