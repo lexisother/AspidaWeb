@@ -6,7 +6,6 @@ pipeline:
             - apt update
             - apt install -y jq curl
             - scripts/fetchMembers.sh
-            - mkdir data; mv data.json data/members.json
             - npm install
             - npm run lint
             - npm run build
