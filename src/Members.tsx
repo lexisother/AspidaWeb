@@ -47,6 +47,7 @@ export default function MembersPage({data}: MembersPageProps): JSX.Element {
             <div className="header">
                 <h1>Members</h1>
                 <p>Below is a list of all the Aspida members.</p>
+                <p>We currently have {members.length} members.</p>
             </div>
             <div className="cards">
                 {members.map((member) => (
