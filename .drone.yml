@@ -1,0 +1,27 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+    - name: Build
+      image: node:latest
+      environment:
+          BOT_TOKEN:
+              from_secret: BOT_TOKEN
+      commands:
+          - apt update
+          - apt install -y jq curl
+          - scripts/fetchMembers.sh
+          - npm install
+          - npm run lint
+          - npm run build
+
+    - name: Deploy
+      image: node:latest
+      environment:
+          NOW_TOKEN:
+              from_secret: NOW_TOKEN
+      commands:
+          - npm i -g vercel
+          - vercel --token "$NOW_TOKEN" --prod --confirm
